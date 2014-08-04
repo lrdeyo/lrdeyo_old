@@ -1,0 +1,577 @@
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*$primaryColor: #776d6b;
+$secondaryColor: #e1dad4;
+$accentColor: #fbfc48; e2e200*/
+/* line 14, ../sass/screen.scss */
+.span-eight-col-center, #jumbotron, #work-section h2, #work-display, #about-section, #contact-section, footer {
+  width: 66.08%;
+  max-width: 1000px;
+  margin: 1% auto;
+}
+
+/* line 19, ../sass/screen.scss */
+.span-onefourth-col, nav ul li {
+  width: 22.7%;
+  margin: 1% 0 1% 1.6%;
+}
+
+/* line 23, ../sass/screen.scss */
+.span-onefourth-col:first-child, nav ul li:first-child {
+  margin-left: 0;
+}
+
+/* line 26, ../sass/screen.scss */
+.block-onefourth-col, #work-display .work-ex {
+  width: 25%;
+  margin: 0;
+}
+
+@-webkit-keyframes moveBackground {
+  /* line 58, ../sass/screen.scss */
+  50% {
+    -webkit-transform: translate(50px, 10px);
+    -moz-transform: translate(50px, 10px);
+    -ms-transform: translate(50px, 10px);
+    -o-transform: translate(50px, 10px);
+    transform: translate(50px, 10px);
+  }
+}
+
+@-moz-keyframes moveBackground {
+  /* line 58, ../sass/screen.scss */
+  50% {
+    -webkit-transform: translate(50px, 10px);
+    -moz-transform: translate(50px, 10px);
+    -ms-transform: translate(50px, 10px);
+    -o-transform: translate(50px, 10px);
+    transform: translate(50px, 10px);
+  }
+}
+
+@-ms-keyframes moveBackground {
+  /* line 58, ../sass/screen.scss */
+  50% {
+    -webkit-transform: translate(50px, 10px);
+    -moz-transform: translate(50px, 10px);
+    -ms-transform: translate(50px, 10px);
+    -o-transform: translate(50px, 10px);
+    transform: translate(50px, 10px);
+  }
+}
+
+@-o-keyframes moveBackground {
+  /* line 58, ../sass/screen.scss */
+  50% {
+    -webkit-transform: translate(50px, 10px);
+    -moz-transform: translate(50px, 10px);
+    -ms-transform: translate(50px, 10px);
+    -o-transform: translate(50px, 10px);
+    transform: translate(50px, 10px);
+  }
+}
+
+@keyframes moveBackground {
+  /* line 58, ../sass/screen.scss */
+  50% {
+    -webkit-transform: translate(50px, 10px);
+    -moz-transform: translate(50px, 10px);
+    -ms-transform: translate(50px, 10px);
+    -o-transform: translate(50px, 10px);
+    transform: translate(50px, 10px);
+  }
+}
+
+@-webkit-keyframes moveMiddleground {
+  /* line 63, ../sass/screen.scss */
+  50% {
+    -webkit-transform: translate(-55px, 5px);
+    -moz-transform: translate(-55px, 5px);
+    -ms-transform: translate(-55px, 5px);
+    -o-transform: translate(-55px, 5px);
+    transform: translate(-55px, 5px);
+  }
+}
+
+@-moz-keyframes moveMiddleground {
+  /* line 63, ../sass/screen.scss */
+  50% {
+    -webkit-transform: translate(-55px, 5px);
+    -moz-transform: translate(-55px, 5px);
+    -ms-transform: translate(-55px, 5px);
+    -o-transform: translate(-55px, 5px);
+    transform: translate(-55px, 5px);
+  }
+}
+
+@-ms-keyframes moveMiddleground {
+  /* line 63, ../sass/screen.scss */
+  50% {
+    -webkit-transform: translate(-55px, 5px);
+    -moz-transform: translate(-55px, 5px);
+    -ms-transform: translate(-55px, 5px);
+    -o-transform: translate(-55px, 5px);
+    transform: translate(-55px, 5px);
+  }
+}
+
+@-o-keyframes moveMiddleground {
+  /* line 63, ../sass/screen.scss */
+  50% {
+    -webkit-transform: translate(-55px, 5px);
+    -moz-transform: translate(-55px, 5px);
+    -ms-transform: translate(-55px, 5px);
+    -o-transform: translate(-55px, 5px);
+    transform: translate(-55px, 5px);
+  }
+}
+
+@keyframes moveMiddleground {
+  /* line 63, ../sass/screen.scss */
+  50% {
+    -webkit-transform: translate(-55px, 5px);
+    -moz-transform: translate(-55px, 5px);
+    -ms-transform: translate(-55px, 5px);
+    -o-transform: translate(-55px, 5px);
+    transform: translate(-55px, 5px);
+  }
+}
+
+@-webkit-keyframes moveForeground {
+  /* line 68, ../sass/screen.scss */
+  50% {
+    -webkit-transform: translate(40px, 15px);
+    -moz-transform: translate(40px, 15px);
+    -ms-transform: translate(40px, 15px);
+    -o-transform: translate(40px, 15px);
+    transform: translate(40px, 15px);
+  }
+}
+
+@-moz-keyframes moveForeground {
+  /* line 68, ../sass/screen.scss */
+  50% {
+    -webkit-transform: translate(40px, 15px);
+    -moz-transform: translate(40px, 15px);
+    -ms-transform: translate(40px, 15px);
+    -o-transform: translate(40px, 15px);
+    transform: translate(40px, 15px);
+  }
+}
+
+@-ms-keyframes moveForeground {
+  /* line 68, ../sass/screen.scss */
+  50% {
+    -webkit-transform: translate(40px, 15px);
+    -moz-transform: translate(40px, 15px);
+    -ms-transform: translate(40px, 15px);
+    -o-transform: translate(40px, 15px);
+    transform: translate(40px, 15px);
+  }
+}
+
+@-o-keyframes moveForeground {
+  /* line 68, ../sass/screen.scss */
+  50% {
+    -webkit-transform: translate(40px, 15px);
+    -moz-transform: translate(40px, 15px);
+    -ms-transform: translate(40px, 15px);
+    -o-transform: translate(40px, 15px);
+    transform: translate(40px, 15px);
+  }
+}
+
+@keyframes moveForeground {
+  /* line 68, ../sass/screen.scss */
+  50% {
+    -webkit-transform: translate(40px, 15px);
+    -moz-transform: translate(40px, 15px);
+    -ms-transform: translate(40px, 15px);
+    -o-transform: translate(40px, 15px);
+    transform: translate(40px, 15px);
+  }
+}
+
+/* line 73, ../sass/screen.scss */
+html {
+  min-width: 320px;
+  color: #565656;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+/* line 79, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Sanchez", serif;
+}
+
+/* line 82, ../sass/screen.scss */
+h2 {
+  margin-top: 0.5em;
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+/* line 87, ../sass/screen.scss */
+p {
+  margin-bottom: .5em;
+}
+
+/* line 91, ../sass/screen.scss */
+a, a:visited {
+  color: #565656;
+  text-decoration: none;
+}
+
+/* line 95, ../sass/screen.scss */
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+/* line 99, ../sass/screen.scss */
+#home {
+  border-top: 1px solid transparent;
+  margin-top: -1px;
+}
+
+/* line 104, ../sass/screen.scss */
+nav {
+  width: 100%;
+  font-family: "Sanchez", serif;
+}
+/* line 107, ../sass/screen.scss */
+nav ul {
+  padding: 1% 16.93%;
+  position: relative;
+  z-index: 100;
+  background-color: #c5c4c6;
+}
+/* line 113, ../sass/screen.scss */
+nav ul li {
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 120, ../sass/screen.scss */
+.sticky-nav {
+  width: 66.14%;
+  margin: 0;
+  padding: 1% 16.93%;
+  background-color: #c5c4c6;
+  position: fixed;
+  top: -58px;
+}
+
+/* line 129, ../sass/screen.scss */
+#jumbotron {
+  margin-top: 2%;
+  margin-bottom: 3%;
+  height: 110px;
+}
+/* line 134, ../sass/screen.scss */
+#jumbotron img {
+  margin-right: 17px;
+  display: inline-block;
+  vertical-align: top;
+  width: 110px;
+  height: 110px;
+}
+/* line 141, ../sass/screen.scss */
+#jumbotron h1 {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -1.6%;
+  width: 74%;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 32px;
+  line-height: 41px;
+}
+
+/* line 152, ../sass/screen.scss */
+.wave-group {
+  margin-top: -231px;
+  padding-bottom: 137px;
+  width: 100%;
+  height: 275px;
+  overflow: hidden;
+  background-color: #c5c4c6;
+}
+
+/* line 160, ../sass/screen.scss */
+.wave-background {
+  margin: 35px 0 0 -50px;
+  width: 116%;
+  min-height: 235px;
+  background: url("../imgs/waveBackground.png") repeat-x;
+  background-position: 50% 188px;
+  -webkit-animation: moveBackground 5s ease infinite;
+  -moz-animation: moveBackground 5s ease infinite;
+  -ms-animation: moveBackground 5s ease infinite;
+  -o-animation: moveBackground 5s ease infinite;
+  animation: moveBackground 5s ease infinite;
+}
+
+/* line 168, ../sass/screen.scss */
+.wave-background-block {
+  position: relative;
+  top: 230px;
+  background-color: #565656;
+  width: 116%;
+  min-height: 50px;
+}
+
+/* line 175, ../sass/screen.scss */
+.wave-middleground {
+  margin: -203px 0 0 -60px;
+  width: 119%;
+  min-height: 271px;
+  background: url("../imgs/waveMiddleground.png") repeat-x;
+  background-position: 50% 182px;
+  -webkit-animation: moveMiddleground 3s ease infinite;
+  -moz-animation: moveMiddleground 3s ease infinite;
+  -ms-animation: moveMiddleground 3s ease infinite;
+  -o-animation: moveMiddleground 3s ease infinite;
+  animation: moveMiddleground 3s ease infinite;
+}
+
+/* line 183, ../sass/screen.scss */
+.wave-middleground-block {
+  position: relative;
+  top: 234px;
+  background-color: #fbfc48;
+  width: 119%;
+  min-height: 50px;
+}
+
+/* line 190, ../sass/screen.scss */
+.wave-foreground {
+  margin: -240px 0 0 -40px;
+  width: 113%;
+  min-height: 235px;
+  background: url("../imgs/waveForeground.png") repeat-x;
+  background-position: 50% 172px;
+  -webkit-animation: moveForeground 4s ease infinite;
+  -moz-animation: moveForeground 4s ease infinite;
+  -ms-animation: moveForeground 4s ease infinite;
+  -o-animation: moveForeground 4s ease infinite;
+  animation: moveForeground 4s ease infinite;
+}
+
+/* line 198, ../sass/screen.scss */
+.wave-foreground-block {
+  position: relative;
+  top: 230px;
+  background-color: white;
+  width: 113%;
+  min-height: 85px;
+  background-attachment: local;
+}
+
+/* line 214, ../sass/screen.scss */
+#work-display {
+  height: 450px;
+  margin-bottom: 0.5em;
+}
+/* line 218, ../sass/screen.scss */
+#work-display .work-ex {
+  position: relative;
+  float: left;
+  height: 450px;
+}
+/* line 224, ../sass/screen.scss */
+#work-display #work-ex-one {
+  background: url("../imgs/video_work_ex_gs.jpg");
+}
+/* line 227, ../sass/screen.scss */
+#work-display #work-ex-two {
+  background: url("../imgs/toc_work_ex_gs.jpg");
+}
+/* line 230, ../sass/screen.scss */
+#work-display #work-ex-three {
+  background: url("../imgs/hl_work_ex_gs.jpg");
+}
+/* line 233, ../sass/screen.scss */
+#work-display #work-ex-four {
+  background: url("../imgs/rav4_work_ex_gs.jpg");
+}
+/* line 236, ../sass/screen.scss */
+#work-display .ex-description {
+  max-height: 0;
+  position: absolute;
+  bottom: 0;
+  overflow-y: hidden;
+  transition: max-height 1s;
+}
+/* line 242, ../sass/screen.scss */
+#work-display .ex-description p {
+  padding: 1em;
+  margin-bottom: 0;
+  background-color: rgba(86, 86, 86, 0.85);
+  color: #fbfc48;
+  font-weight: 100;
+}
+/* line 250, ../sass/screen.scss */
+#work-display #work-ex-one:hover {
+  background: url("../imgs/video_work_ex.jpg");
+}
+/* line 252, ../sass/screen.scss */
+#work-display #work-ex-one:hover .ex-description {
+  max-height: 450px;
+}
+/* line 256, ../sass/screen.scss */
+#work-display #work-ex-two:hover {
+  background: url("../imgs/toc_work_ex.jpg");
+}
+/* line 258, ../sass/screen.scss */
+#work-display #work-ex-two:hover .ex-description {
+  max-height: 450px;
+}
+/* line 262, ../sass/screen.scss */
+#work-display #work-ex-three:hover {
+  background: url("../imgs/hl_work_ex.jpg");
+}
+/* line 264, ../sass/screen.scss */
+#work-display #work-ex-three:hover .ex-description {
+  max-height: 450px;
+}
+/* line 268, ../sass/screen.scss */
+#work-display #work-ex-four:hover {
+  background: url("../imgs/rav4_work_ex.jpg");
+}
+/* line 270, ../sass/screen.scss */
+#work-display #work-ex-four:hover .ex-description {
+  max-height: 450px;
+}
+
+/* line 276, ../sass/screen.scss */
+#about-section {
+  background-color: white;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+/* line 292, ../sass/screen.scss */
+footer {
+  margin-top: 3%;
+  height: 50px;
+  border-top: 1px dashed #c5c4c6;
+  text-align: center;
+}
+/* line 298, ../sass/screen.scss */
+footer p {
+  margin-top: 17px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 303, ../sass/screen.scss */
+  .span-eight-col-center, #jumbotron, #work-section h2, #work-display, #about-section, #contact-section, footer {
+    width: 100%;
+    margin: 1% 1%;
+  }
+
+  /* line 307, ../sass/screen.scss */
+  #jumbotron {
+    margin: 3% 3% 4% 3%;
+  }
+
+  /* line 310, ../sass/screen.scss */
+  #work-section {
+    border-top: 243px solid transparent;
+    margin-top: -219px;
+  }
+
+  /* line 314, ../sass/screen.scss */
+  #about-section {
+    border-top: 175px solid transparent;
+    margin-top: -196px !important;
+  }
+
+  /* line 319, ../sass/screen.scss */
+  #contact-section {
+    border-top: 465px solid transparent;
+    margin-top: -450px !important;
+  }
+}
+@media only screen and (max-width: 515px) {
+  /* line 325, ../sass/screen.scss */
+  .span-onefourth-col, nav ul li {
+    width: 22%;
+  }
+
+  /* line 328, ../sass/screen.scss */
+  #jumbotron h1 {
+    width: 65%;
+    font-size: 20px;
+    line-height: 34px;
+    margin-top: 2px;
+  }
+
+  /* line 334, ../sass/screen.scss */
+  #work-display .work-ex {
+    height: 225px;
+    width: 50%;
+  }
+}
