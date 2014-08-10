@@ -9,6 +9,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/font.css">
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -85,10 +86,35 @@
 	</div>
 
 	<div id="contact-section">
-		<h2>Get in Touch</h2>
-		<p>Email: <a href="mailto:lrdeyo@gmail.com">lrdeyo -at- gmail -dot- com</a></p>
-		<p>LinkedIn: <a href="http://www.linkedin.com/in/laurardeyo/" target="_blank">Laura Deyo</a></p>
-		<p>GitHub: <a href="https://github.com/lrdeyo" target="_blank">lrdeyo</a></p>
+		<div id="contact-header">
+			<h2>Get in Touch</h2>
+			<div class="contact-icons">
+				<a href="https://github.com/lrdeyo" target="_blank" class="icon-github"></a>
+				<a href="https://www.linkedin.com/in/laurardeyo" target="_blank" class="icon-linkedin"></a>
+				<a href="https://twitter.com/lrdeyo" target="_blank" class="icon-twitter"></a>
+			</div>
+		</div>
+		<form id="contact-form" name="contact" action="">
+			<fieldset>
+				<label for="name" id="name-label">Name</label>
+				<input type="text" name="name" id="name" value="Required: Please enter name" required class="contact_entry" />
+				<label class="contact-error" for="name" id="name-error">This field is required.</label>
+			</fieldset>
+
+			<fieldset>
+				<label for="email" id="email-label">Email</label>
+				<input type="email" name="email" id="email" value="Required: Please enter email" required class="contact_entry" />
+				<label class="contact-error" for="email" id="email-error">This field is required.</label>
+			</fieldset>
+
+			<fieldset>
+				<label for="message" id="message-label">Message</label>
+				<textarea rows="4" name="message" id="message" required class="contact_entry">Required: Please enter message</textarea>
+				<label class="contact-error" for="message" id="message-error">This field is required.</label>
+			</fieldset>
+
+			<input type="submit" name="submit" class="button" id="submit_btn" value="Send" />
+		</form>
 	</div>
 
 	<footer>
