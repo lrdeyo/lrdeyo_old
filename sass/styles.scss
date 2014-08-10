@@ -358,7 +358,7 @@ footer {
 }
 @media only screen and ( max-width : 768px ) {
 	.span-eight-col-center {
-		width: 100%;
+		width: 98%;
 		margin: 1% 1%;
 	}
 	#jumbotron {
@@ -376,6 +376,9 @@ footer {
 	#contact-section {
 		border-top: 465px solid transparent;
 		margin-top: -450px !important;
+	}
+	form input[type=text], form input[type=email], form textarea {
+		width: 97%;
 	}
 }
 @media only screen and ( max-width : 515px ) {
