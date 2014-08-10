@@ -19,7 +19,11 @@ $( function() {
         //sticky nav vars
         $navUl = $( 'nav ul' ),
         $navItems = $( 'nav ul li a' ),
-        isNavDisplayed = true;
+        isNavDisplayed = true,
+        $nameInput = $( '#name' ),
+		$emailInput = $( '#email' ),
+		$messageInput = $( '#message' ),
+		defaultValue = 'Required: Please enter';
 
 	//*********** WAVE PARALLAX **********//
 	$( 'div[data-type="background"]' ).each( function(){
@@ -109,5 +113,45 @@ $( function() {
 			navStickiness();
 		});
 	}//end check if nav is displayed
+
+	// ********** FORM INPUT FOCUS HANDLING ********** //
+	$( 'form input, form textarea' )
+	.on( 'focus', function() {
+		if( $(this).val().slice( 0, 22 ) === defaultValue ) {
+			$(this).val('');
+		}
+	})
+	.on( 'blur', function() {
+		if( $(this).val().length === 0 ) {
+			$(this).val( defaultValue );
+		} 
+		if (  $(this).val().length < 2 || $(this).val() === defaultValue || ( $(this).attr( 'id') === 'email' && $(this).val().length < 10 ) ) {
+			$(this).next().show();
+		} else {
+			$(this).next().hide();
+		}
+	});
+
+	// ********** FORM SUBMISSION HANDLING ********** //
+	$( 'form' ).submit( function( evt ) {
+		evt.preventDefault();
+
+		 var data = {
+		 	name_input: $nameInput.val(),
+		 	email_input: $emailInput.val(),
+		 	message_input: $messageInput.val()
+		 }
+
+		$.ajax({
+			type: 'POST',
+			url: 'contact.php',
+			data: data,
+			success: function(data) {
+				$( '#contact-section form' ).hide();
+			}
+		});
+
+		return false;
+	});	
 
 });
